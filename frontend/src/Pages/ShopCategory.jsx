@@ -10,7 +10,7 @@ const ShopCategory = (props) => {
 
    return (
       <div className='shop-category'>
-         <img src={props.banner} alt="category banner" />
+         <img className='sortcategory-banner' src={props.banner} alt="category banner" />
          <div className="shopcategory-indexSort">
             <p>
                <span>Rodyti 1-10</span> iš 14 produktų
@@ -35,8 +35,10 @@ const ShopCategory = (props) => {
                } else {
                   return null;
                }
-
             })}
+         </div>
+         <div className="shopcategory-loadmore">
+            Pateikti daugiau
          </div>
       </div>
    )
