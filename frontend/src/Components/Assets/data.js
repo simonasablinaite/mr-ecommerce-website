@@ -12,21 +12,21 @@ let data_product = [
       old_price: 12.50
    },
    {
-      id: 2,
+      id: 3,
       name: "vienpuse skrajute",
       image: p3_img,
       new_price: 15.00,
       old_price: 18.00
    },
    {
-      id: 3,
+      id: 5,
       name: "lankstinukas",
       image: p5_img,
       new_price: 15.00,
       old_price: 20.00
    },
    {
-      id: 4,
+      id: 6,
       name: "lankstinukas",
       image: p6_img,
       new_price: 15.00,

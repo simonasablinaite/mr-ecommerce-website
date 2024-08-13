@@ -25,7 +25,7 @@ let all_product = [
    },
    {
       id: 2,
-      name: "vienpuse skrajute",
+      name: "dvipuse vizitine kortele",
       category: 'spauda',
       image: p2_img,
       new_price: 15.00,
@@ -113,7 +113,7 @@ let all_product = [
    },
    {
       id: 13,
-      name: "Sviecianti kambario dekoracija u metrikais",
+      name: "Sviecianti kambario dekoracija su metrikais",
       category: 'dovanos',
       image: p13_img,
       new_price: 35,
