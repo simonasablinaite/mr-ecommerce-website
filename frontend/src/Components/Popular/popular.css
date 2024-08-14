@@ -19,10 +19,6 @@
   background: #252525;
 }
 
-.popular img {
-  width: 300px;
-}
-
 .popular-item {
   margin-top: 50px;
   display: flex;

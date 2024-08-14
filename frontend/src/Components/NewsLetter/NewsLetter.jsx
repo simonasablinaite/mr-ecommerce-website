@@ -8,7 +8,7 @@ const NewsLetter = () => {
          <p>Prenumeruokite naujienlaiškį</p>
 
          <div>
-            <input type="email" placeholder='Jūsų El. pašto id' />
+            <input type="email" placeholder='Jūsų El. paštas' />
             <button>Prenumeruoti</button>
          </div>
       </div>
