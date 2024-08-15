@@ -21,15 +21,13 @@ let new_collection = [
    {
       id: 13,
       name: "Sviecianti kambario dekoracija su metrikais",
-      category: 'dovanos',
       image: p13_img,
       new_price: 35,
       old_price: 50.00
    },
    {
       id: 14,
-      name: "medinis rankinukas",
-      category: 'dovanos',
+      name: "Dėžutė",
       image: p14_img,
       new_price: 40.00,
       old_price: 50.00

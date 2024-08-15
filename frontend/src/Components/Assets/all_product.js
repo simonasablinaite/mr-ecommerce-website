@@ -121,11 +121,11 @@ let all_product = [
    },
    {
       id: 14,
-      name: "medinis rankinukas",
+      name: "Dėžutė",
       category: 'dovanos',
       image: p14_img,
-      new_price: 40.00,
-      old_price: 50.00
+      new_price: 18.00,
+      old_price: 30.00
    },
 ]
 

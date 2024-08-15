@@ -29,7 +29,7 @@ const Navbar = () => {
             <li onClick={() => { setMenu("shop") }}><Link style={{ textDecoration: "none" }} to='/'> E-parduotuvė</Link>{menu === "shop" ? <hr /> : <></>}  </li>
             <li onClick={() => { setMenu("spauda") }}><Link style={{ textDecoration: "none" }} to='/spauda'> Spauda</Link>  {menu === "spauda" ? <hr /> : <></>}</li>
             <li onClick={() => { setMenu("graviravimas") }}><Link style={{ textDecoration: "none" }} to='/graviravimas'>Graviravimas</Link> {menu === "graviravimas" ? <hr /> : <></>}</li>
-            <li onClick={() => { setMenu("dovanu idejos") }}><Link style={{ textDecoration: "none" }} to='/dovanu idejos'>Dovanų idėjos</Link> {menu === "dovanu idejos" ? <hr /> : <></>}</li>
+            <li onClick={() => { setMenu("dovanų idėjos") }}><Link style={{ textDecoration: "none" }} to='/dovanų idėjos'>Dovanų idėjos</Link> {menu === "dovanų idėjos" ? <hr /> : <></>}</li>
          </ul>
 
          <div className="nav-login-cart">
