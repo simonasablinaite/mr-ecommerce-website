@@ -198,6 +198,71 @@ app.post('/login', async (req, res) => {
    }
 })
 
+// Sukuriama galutine vieta "nauja kolekcija" prekėms:
+app.get('/newcollections', async (req, res) => {
+   let products = await Product.find({});
+   let newcollection = products.slice(1).slice(-8);
+
+   console.log('NewCollection fetched');
+   res.send(newcollection);
+})
+
+// Sukuriama galutine vieta "populiariausi maketai" prekėms:
+app.get('/popularingifts', async (req, res) => {
+   let products = await Product.find({ category: "dovanų idėjos" });
+   let popular_in_gifts = products.slice(0, 4);
+
+   console.log("Popular in gifts fetched");
+
+   res.send(popular_in_gifts);
+})
+
+// Sukuriama tarpine programa vartotojui gauti:
+const fetchUser = async (req, res, next) => {
+   const token = req.header('auth-token');
+
+   if (!token) {
+      res.status(401).send({ errors: "Patvirtinkite naudodami galiojantį prieigos raktą" })
+   } else {
+      try {
+         const data = jwt.verify(token, 'secret_ecom');
+         req.user = data.user;
+         next();
+      } catch (error) {
+         res.status(401).send({ errors: "Patvirtinkite naudodami galiojantį prieigos raktą" })
+      }
+   }
+}
+
+// Sukuriama galutine vieta "prideti prekes i krepseli" prekėms:
+app.post('/addtocart', fetchUser, async (req, res) => {
+   // console.log(req.body, req.user);
+   console.log("Pridėta", req.body.itemId);
+
+   let userData = await Users.findOne({ _id: req.user.id });
+   userData.cartData[req.body.itemId] += 1;
+   await Users.findOneAndUpdate({ _id: req.user.id }, { cartData: userData.cartData });
+   res.send("Pridėta");
+})
+
+// Sukuriama galutine vieta "pasalinti preke is krepselio" prekėms:
+app.post('/removefromcart', fetchUser, async (req, res) => {
+   console.log("Pašalinta", req.body.itemId);
+   let userData = await Users.findOne({ _id: req.user.id });
+
+   if (userData.cartData[req.body.itemId] > 0)
+      userData.cartData[req.body.itemId] -= 1;
+   await Users.findOneAndUpdate({ _id: req.user.id }, { cartData: userData.cartData });
+   res.send("Pašalinta");
+})
+
+// Sukuriama galutine vieta krepselyje esanciu prekiu gavimui:
+app.post('/getcart', fetchUser, async (req, res) => {
+   console.log('GetCart');
+   let userData = await Users.findOne({ _id: req.user.id });
+   res.json(userData.cartData);
+})
+
 app.listen(port, (error) => {
    if (!error) {
       console.log("Serveris sukasi ant " + port + " porto");

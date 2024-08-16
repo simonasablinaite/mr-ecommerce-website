@@ -19,8 +19,8 @@
   background: #252525;
 }
 
-.new-collections img {
-  height: 250px;
+.collections img {
+  width: 220px;
 }
 
 .new-collections-item {
