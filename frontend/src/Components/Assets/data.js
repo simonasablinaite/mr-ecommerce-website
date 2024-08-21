@@ -7,16 +7,16 @@ let data_product = [
       name: "Nertas zuikis",
       category: "dovanų idėjos",
       image: d1_img,
-      new_price: 15.00,
-      old_price: 12.00
+      old_price: 15.00,
+      new_price: 12.00
    },
    {
       id: 2,
       name: "Nertas barškutis (Žirafa)",
       category: 'dovanų idėjos',
       image: d2_img,
-      new_price: 15.00,
-      old_price: 12.00
+      old_price: 15.00,
+      new_price: 12.00
    },
 ]
 

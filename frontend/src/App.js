@@ -22,7 +22,7 @@ function App() {
           <Route path='/' element={<Shop />} />
           <Route path='/spauda' element={<ShopCategory banner={press_banner} category="spauda" />} />
           <Route path='/graviravimas' element={<ShopCategory banner={engraving_banner} category="graviravimas" />} />
-          <Route path='/dovanų idėjos' element={<ShopCategory banner={presents_banner} category="dovanos" />} />
+          <Route path='/dovanų idėjos' element={<ShopCategory banner={presents_banner} category="dovanų idėjos" />} />
           <Route path='/product' element={<Product />}>
             <Route path=':productId' element={<Product />} />
           </Route>
