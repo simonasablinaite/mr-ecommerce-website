@@ -75,7 +75,7 @@ const LoginSignup = () => {
                <input name='password' value={formData.password} onChange={changeHandler} type="password" placeholder='Slaptažodis' />
             </div>
             <button onClick={() => { state === "Prisijungti" ? login() : signup() }}>Tęsti</button>
-            {state === "Registruotis" ? <p className='loginsignup-login'>Jau turi paskyrą? <span onClick={() => { setState("Prisijungti") }}>Prisijunk čia</span> </p> : <p className='loginsignup-login'>Sukurti paskyrą? <span onClick={() => { setState("Registruotis") }}>Ppausk čia</span> </p>
+            {state === "Registruotis" ? <p className='loginsignup-login'>Jau turi paskyrą? <span onClick={() => { setState("Prisijungti") }}>Prisijunk čia</span> </p> : <p className='loginsignup-login'>Sukurti paskyrą? <span onClick={() => { setState("Registruotis") }}>Spausk čia</span> </p>
             }
 
             <div className="loginsignup-agree">

@@ -76,6 +76,8 @@ const Product = mongoose.model("Product", {
    }
 })
 
+// Sukuriamas endpointas produktų pridėjimui:
+
 app.post("/addproduct", async (req, res) => {
    let products = await Product.find({});
    let id;
@@ -84,7 +86,7 @@ app.post("/addproduct", async (req, res) => {
       let last_product_array = products.slice(-1);
       let last_product = last_product_array[0];
       id = last_product.id + 1;
-   } else {
+   } else { 
       id = 1;
    }
 
