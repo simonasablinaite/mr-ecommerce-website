@@ -20,14 +20,21 @@ This project is definitely not ideal and definitely not finished. However, all e
 
 ## 🎯 Project features/goals
 
-- responsive design
+- 3 in 1 project
+- responsive & interactive design
 - form
 - sign/login
-- animations
-- icons
-- save carts
+- user account
+- save carts information
 - gallery
-- pages
+- pages and components
+- context
+- routes and route
+- pages filtering by item category
+- fetch
+- items uploading
+- items list
+- and a lot of others things...
 
 ## 🧰 Getting Started
 
