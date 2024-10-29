@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# React + Node.js + MongoDB
+# React + Express.js + MongoDB
 
 _E-shop full-stack project_
 
@@ -11,7 +11,7 @@ _E-shop full-stack project_
 
 ## 🌟 About
 
-It is a full-stack e-shop platform that combines three parts: frontend, backend and admin panel. This platform was built using react.js, node.js and mongoBD.
+It is a full-stack e-shop platform that combines three parts: frontend, backend and admin panel. This platform was built using react.js, express.js and mongoBD.
 Frontend: Sleek, user-friendly, interactive and responsive design.
 Backend: Sign and login/logout, save user carts information, add and remove items from cart and e-shop. The information uploaded in the admin panel is combined with the e-shop.
 Admin panel: Possibility to upload item with their description and photo. Uploaded products end up in the administrator's list of products, where they can be deleted. All products in the administrator's product list are displayed in the e-shop.
@@ -34,6 +34,7 @@ This project is definitely not ideal and definitely not finished. However, all e
 - fetch
 - items uploading
 - items list
+- express.js
 - and a lot of others things...
 
 ## 🧰 Getting Started
