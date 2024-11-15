@@ -59,7 +59,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/front-end-by-rimantas/42-grupe-portfolio-react.git
+https://github.com/simonasablinaite/mr-ecommerce-website.git
    ```
 2. Install NPM packages
    ```sh

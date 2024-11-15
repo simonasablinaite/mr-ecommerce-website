@@ -4,6 +4,7 @@
   padding: 16px;
   box-shadow: 0 1px 3px -2px black;
   align-items: center;
+text-transform: uppercase;
 }
 
 .nav-logo img {
@@ -15,7 +16,6 @@
   align-items: center;
   list-style: none;
   gap: 50px;
-  color: #626262;
   font-size: 20px;
   font-weight: 500;
 }
@@ -27,6 +27,15 @@
   justify-content: center;
   gap: 3px;
   cursor: pointer;
+
+}
+
+.nav-menu li a {
+  color: #114366
+}
+
+.nav-menu li a:hover {
+  color: #1e9ac3
 }
 
 .nav-menu hr {
@@ -62,6 +71,7 @@
 
 .nav-login-cart button:active {
   background: #f3f3f3;
+  color: #1e95be;
 }
 
 .nav-cart-count {
