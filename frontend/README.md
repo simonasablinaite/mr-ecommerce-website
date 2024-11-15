@@ -61,7 +61,7 @@ Would like to run this project locally? Open terminal and follow these steps:
    ```sh
 https://github.com/simonasablinaite/mr-ecommerce-website.git
    ```
-2. Install NPM packages
+2. Install NPM packages in all three files:
    ```sh
    npm i
    ```
