@@ -25,11 +25,11 @@ const Footer = () => {
                </a>
             </div>
             <div className="footer-icon-container">
-               <a href="#" target='blank'>               <img src={pinterest_icon} alt="pinterest icon" />
+               <a href="#" target='blank'><img src={pinterest_icon} alt="pinterest icon" />
                </a>
             </div>
             <div className="footer-icon-container">
-               <a href="#" target='blank'>               <img src={yt_icon} alt="youtube icon" />
+               <a href="#" target='blank'><img src={yt_icon} alt="youtube icon" />
                </a>
             </div>
          </div>

@@ -1,5 +1,5 @@
 .navbar {
-  display: flex;
+    display: flex;
   justify-content: space-around;
   padding: 16px;
   box-shadow: 0 1px 3px -2px black;
@@ -31,7 +31,7 @@ text-transform: uppercase;
 }
 
 .nav-menu li a {
-  color: #114366
+  color: #2b2a29
 }
 
 .nav-menu li a:hover {
